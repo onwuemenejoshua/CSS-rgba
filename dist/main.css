@@ -1,0 +1,121 @@
+body {
+  padding: 3rem;
+  font-family: "Poppins", "sans-serif";
+  background-image: url("/images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(90, 22, 90, 1);
+}
+
+#phoneLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#desktopLogo {
+  display: none;
+}
+
+#mainDiv {
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 1.625;
+  color: rgba(255, 255, 255, 1);
+}
+
+p {
+  padding-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.75rem 2.25rem;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(201, 219, 236, 0.5);
+}
+
+#footerDiv {
+  display: flex;
+  margin-top: 1.75rem;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #phoneLogo {
+    display: none;
+  }
+
+  #desktopLogo {
+    display: block;
+  }
+
+  #mainDiv {
+    flex-direction: row;
+  }
+
+  #image {
+    width: 50%;
+  }
+  #content {
+    width: 50%;
+    margin-top: -30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  #buttonDiv {
+    justify-content: flex-start;
+  }
+
+  #footerDiv {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("/images/bg-mobile.svg");
+  }
+}
+
+.phoneLogo {
+  width: 200px;
+}
+
+@media screen and (max-width: 685px) {
+  #content {
+    text-align: center;
+  }
+}
